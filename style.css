@@ -1,58 +1,167 @@
-body {
-    background-color: rgb(238, 231, 231);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 5px;
-    row-gap: 5px;
-    column-gap: 5px;
-    padding: 3px;
-    border: 5px solid blue;
-}
-
-/*.grid-container>div {
-    text-align: left;
-
-}*/
-
-.itemHeader {
-    background-color: #DEB595;
-    grid-area: 1 / 1 / span 1 /span 4;
-    /*area comienza en la fila 1 columna 1 se extiende hasta fila 1 columna 4 */
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    display: inline;
-}
-
-ul li a {
-    display: inline-block;
-    width: 150px;
-    height: 20px;
-    color: #433534;
-    font-weight: bold;
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
     font-size: 16px;
-    text-align: center;
-    line-height: 20px;
+
+}
+
+/*header ----------------------------------------*/
+.grid-container-header{
+    display: grid;
+    grid-template-columns: 1fr;/*1 col?*/
+    justify-content: center;
+    align-content: center; /*check .c1*/
+    width: 100%;
+    height: 4.81em; /*77px*/
+    max-width: 90em; /*1440px*/
+    margin: 0 auto;
+    background-color: #EAEAEA; 
+    padding: 10px;
+    /*border: 1px solid black; to remove*/
+}
+.header{
+    /*grid-area: header;*/
+    /*border: 1px solid black; for remove*/
+    background-color: #DEB595;
+    padding: 0px;/*remove*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0px; /*to remove*/
+    margin-left: 10px;
+}
+
+.logo .logo-vivero{
+    padding: 15px;
+    border: 1px solid black;
+    display: inline-block;
     text-decoration: none;
-    margin-left: 0px;
-    margin-top: 20px;
-    font-family: 'Bebas Neue', cursiva;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    color: black;
 }
-.headerSearch__input {
-    border-radius: 20px;
+.logo .logo-vivero:hover{
+    background-color: white;
+}
+
+.header .menu{
+    text-align: right;
+    padding: 0px; /*to remove*/
+    justify-content: center;
+}
+.menu a{
+    border: 1px solid black; /*for remove*/
+    color: black;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+/*search bar*/
+.search-container{
+    display: flex;
+    float: right;
+    margin-left: 20px;
+}
+.menu input[type=text]{/*try remove [type=text]*/
+    float: right;
+    background-color: #D29F77;
     border: none;
-    background-color: #fff;
-    font-weight: bold;
-    color:  #433534;
-    text-align: center;
+    padding: 10px;
 }
+.menu .search-container .search-icon{
+    padding: 15px;
+    background-color: #DEB595;
+    cursor: pointer;
+}
+.menu .search-container .search-icon:hover{
+    background-color: white;
+}
+.shopping-icon, .user-icon{
+    padding: 15px;
+    background-color: #DEB595;
+    cursor: pointer;
+    border: none;
+}
+.shopping-icon:hover, .user-icon:hover{
+    background-color: #D29F77;
+}
+
+/*header ----------------------------------------*/
+
+/*main ----------------------------------------*/
+.grid-container-main-topbar{
+    display: grid;
+    width: 80%;
+    max-width: 75rem; /*1200px*/
+    margin: 0 auto;
+    background-color: #EAEAEA; /*to remove*/
+    /*padding: 0 5px;*/
+    border: 1px solid black;/*to remove*/
+    font-size: 14px;
+}
+.grid-container-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;/*4 col*/
+    grid-template-rows: 20% 20% 45% 45% 45%; /*5 row*/
+    gap: 1.25em;
+    justify-content: center;
+    width: 80%;
+    max-width: 75rem; /*1200px*/
+    margin: 0 auto;
+    background-color: #EAEAEA; 
+    padding: 0 5px;
+    border: 1px solid black;
+}
+
+.caja{
+    /* border: 1px solid black; to remove */
+    background-color: #B1D7BA;
+    text-align: center;
+    line-height: 150px;
+    }
+
+/*caja c2 ----------------------------------------*/
+/*.c1,*/ .c2{
+    grid-column: 1/5;
+    line-height: 10%;
+    gap: 0px;
+}
+.c2{
+    /*border: 1px solid black; to remove*/
+    padding: 20px;
+    display: flex;
+}
+.c2 a{
+    text-decoration: none;
+    margin: 0 5px;
+    color: black;
+}
+hr{/* the line */
+    width: 62.5em;
+    border: 1px solid grey;
+    margin-left: 25px;
+}
+/*caja c2 ----------------------------------------*/
+
+/* .c3{
+    grid-row: 3/6; 
+} */
+
+/*footer*/
+/* .c13, .c14 {
+    grid-column: 1/5;
+    line-height: 100px;
+} */

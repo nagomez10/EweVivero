@@ -12,29 +12,35 @@
         content="EWE, VIVERO, EWE VIVERO, VIVERO EN BUENOS AIRES, EMPRENDIMIENTO, EMPRENDIMIENTO FAMILIAR, FAMILIAR">
     <!--keywords/ SEO-->
     <title>Ewe Vivero</title>
-    <link rel="stylesheet" type="text/css" href="style.css"> <!--hoja de estilo externa-->
-    <link rel="stylesheet" type="text/css" href="styleK.css"> <!--hoja de estilo externa-->
+    <!--<link rel="stylesheet" type="text/css" href="style.css"> hoja de estilo externa-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <script src="https://kit.fontawesome.com/2dd84c4f23.js" crossorigin="anonymous"></script>
+    <!--awesone iconos email__suscribite-->
+    <link rel="stylesheet" type="text/css" href="styleIndex.css"> <!--hoja de estilo externa-->
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!--acceso a uso de google fonts-->
     <link
         href="https://fonts.googleapis.com/css2? family = Bebas + Neue & family = Montserrat: wght @ 200 & family = Orbitron & family = Roboto: wght @ 300; 500 & display = swap "
         rel=" stylesheet "> <!-- link para fuente. Hay otra manera ademas del link en head-->
 </head>
 
-<body>
+<body class="bdoy__index">
+
     <div class="grid-container">
         <!--header inicio-->
-        <div class="itemHeader">
+        <header>
             <!--inicio menu-->
             <Nav>
                 <!-- Brand -->
-                <a href="index.html"><img src="assets/images/eweLogo.png" alt="Ewe Vivero" style="width:100px;"></a>
+                <div id="logo">
+                    <a href="index.html"><img src="assets/images/eweLogo.png" alt="Ewe Vivero" style="width:100px;"></a>
+                </div>
                 <div>
                     <ul>
                         <li class="navItem"><a class="navLink" href="index.html">Inicio</a></li>
                         <li class="navItem"><a class="navLink" href="catalogo.html">Catalogo</a></li>
                         <li class="navItem"><a class="navLink" href="productos.html">Productos</a></li>
                         <li class="navItem"><a class="navLink" href="contacto.html">Contacto</a></li>
-                        <li class="navItem"><a class="navLink" href="acercaDe.html">Acerca de</a></li>
+                        <li class="navItem"><a class="navLink" href="acerca.html">Acerca de</a></li>
                         <!--window search inicio-->
                         <li class="list-item">
                             <form method="get" action="search">
@@ -78,27 +84,109 @@
                     </ul>
                 </div>
             </Nav>
-        </div>
-        <!--header inicio-->
+        </header>
+        <!--header fin-->
+      
 
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
+        <!--carousel inicio-->
+        <div class="contenedor-slider">
+            <div class="slider-izquierdo">
+               <img src="assets/images/left_arrow.svg" alt="">
+            </div>
+
+            <div class="slider-screen">
+               <img name="Imagen">
+            </div>
+
+            <div class="slider-derecho">
+                <img src="assets/images/left_arrow.svg" alt="">
+            </div>
+        </div>      
+        <!--carousel fin-->
+
+        <section class="item ofertas">
+            <h2>Ofertas</h2>
+        </section>
+        <section class="item categorias">
+            <h2>Categorias</h2>
+        </section>
+        <section class="item cuidados">cuidados</section>
+
+
+        <section class="item suscripcion">
+
+
+            <div class="sub-footer-subscribe">
+                <div class="wrapper-container">
+                    <div class="text-subscribe">
+                        <i class="fa-solid fa-envelope" style="color: #6e804f;"></i>
+                        <p>¡Suscribite para recibir las mejores ofertas!</p>
+                    </div>
+                    <div class="subscribe">
+                        <div class="prompt">
+                            <span class="newsletter-prompt"></span>
+                        </div>
+                        <form class="form__suscribite">
+                            <input type="email" size="40" class="newsletter-email" placeholder="Ingresá tu email">
+                            <input type="submit" class="newsletter-submit" value="¡Suscribirme!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <footer class="footer">
+            <p><!--Informacion de contacto-->
+                <strong>CONTACTANOS</strong><br>
+                <strong>Tel</strong><br>+54.9.11.3395.3613<br>
+                <strong>Email</strong><br>palermo@ewevivero.com.ar<br>
+                Buenos Aires, CABA. Argentina<br>
+            </p>
+
+            <nav><!--Menu inicio-->
+                <ul class="ulNav1__footer">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="acerca.html">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav><!--Menu fin-->
+
+            <nav id=""><!--Menu redes inicio-->
+                <ul class="ulNav2__footer">
+                    <li><a href="instagram"><img src="css/imagenes/instagram_blanco.png" alt="instagram" /></a></li>
+
+                    <li><a href="facebook"><img src="css/imagenes/facebook_blanco.png" alt="facebook" /></a></li>
+                </ul>
+            </nav><!--Menu redes fin-->
+
+            <nav><!--Menu legales inicio-->
+                <ul class="ulNav3__footer">
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Configuración de cookies</a></li>
+                </ul>
+            </nav><!--Menu legales fin-->
+        </footer>
     </div>
 
-
-
-
-
-
-
-
-    <script src="codigo.js"> </script>
+  <!-- <script src="codigo.js"> </script>--> 
+    <script src="carousel.js"> </script>
+    <script src="suscribite.js"> </script>
 </body>
 
 </html>

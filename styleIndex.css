@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:wght@300;400;700&display=swap');
+
+
+.body__index {
+    background-color: rgb(238, 231, 231);
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTRUCTURA GRID inicio*/
+
+.grid-container {
+    display: grid;
+    /* padding: 10px;*/
+    gap: 5px;
+    grid-template-rows: repeat (6, auto);
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: repeat (4, 1fr); 
+    4= cantidad de columnas que quiero aplicar
+    1fr=cantidad de unidades fraccionarias
+    va a tener 4 columnas de 1fr cada una de ellas*/
+    grid-template-areas:
+        "header header header header"
+        "slides slides slides slides"
+        "ofertas ofertas ofertas ofertas"
+        "categorias categorias categorias categorias"
+        "cuidados cuidados cuidados cuidados"
+        "newsletter newsletter newsletter newsletter"
+        "footer footer footer footer";
+}
+
+.item {
+    border: 1px solid black;
+    /* height: 100px;*/
+    font-family: Gotham, sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(239, 112, 43);
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+
+}
+
+#logo a {
+    display: inline;
+    color: #e8e8e6;
+    text-decoration: none;
+    filter: drop-shadow(-1px 6px 3px rgba(17, 39, 10, 0.5));
+
+}
+
+#logo a:hover {
+    color: #444444;
+
+
+}
+
+/*inicio carousel*/
+.contenedor-slider
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    padding: 0px 40px;
+}
+
+.slider-izquierdo, .slider-derecho
+{
+    width: 5%;
+}
+
+.slider-izquierdo img, .slider-derecho img
+{
+   width: 100%;
+
+}
+
+.slider-screen
+{
+    width: 90%;
+}
+
+.slider-screen img
+{
+    width: 100%;
+}
+
+
+/*fin carousel*/
+
+
+
+section.ofertas {
+    grid-area: ofertas;
+    background-color: rgb(28, 85, 27);
+}
+
+section.categorias {
+    grid-area: categorias;
+    background-color: rgb(23, 182, 66);
+}
+
+section.cuidados {
+    grid-area: cuidados;
+    background-color: rgb(94, 136, 136);
+}
+
+.suscripcion {
+    grid-area: cuidados;
+    background-color: rgb(47, 69, 197);
+}
+
+footer .sub-footer-subscribe {
+    padding: 10px 0 50px 0;
+    background-image: url(/arquivos/assets_footer_icons_bg-subscribe.jpg);
+    background-repeat: repeat;
+}
+
+footer .wrapper-container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1185px;
+}
+
+.text-subscribe {
+    font-size: calc((19/16) * 1rem);
+    color: #333;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-family: Gotham, sans-serif;
+}
+
+footer .sub-footer-subscribe .wrapper-container>div {
+    display: block;
+    text-align: center;
+}
+
+footer .sub-footer-subscribe .wrapper-container>div.subscribe .prompt {
+    margin: 5px 0;
+}
+
+footer .sub-footer-subscribe .wrapper-container>div.subscribe .prompt .newsletter-prompt {
+    display: block;
+    color: #ff5800;
+    text-align: right;
+    margin-right: 48%;
+}
+
+.form__suscribite {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+input.newsletter-email {
+    color: #828282;
+    font-size: calc((14/16) * 1rem);
+    font-weight: 200;
+    height: 44px;
+    padding: 12px;
+    margin: 0;
+    width: 390px;
+    vertical-align: middle;
+    /* -webkit-appearance: none;*/
+    border: 1.2px solid #ddd;
+}
+
+input.newsletter-submit {
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #ff5700;
+    font-size: calc((16/16) * 1rem);
+    background-color: #ff5700;
+    height: 44px;
+    vertical-align: middle;
+    width: 196px;
+    margin-left: -5px;
+    font-family: Gotham, sans-serif;
+}
+
+
+
+
+
+
+footer {
+    grid-area: footer;
+    background-color: #433534;
+    height: auto;
+}
+
+/*ESTRUCTURA GRID fin*/
+
+
+/*FOOTER*/
+
+footer p {
+    color: #e8e8e6;
+    font-size: 15px;
+}
+
+.ulNav1__footer {
+    list-style-type: none;
+}
+
+.ulNav1__footer li a {
+    display: inline;
+    color: #e8e8e6;
+    text-decoration: none;
+}
+
+.ulNav1__footer li a:hover {
+    color: #deb595;
+}
+
+.ulNav2__footer {
+    list-style-type: none;
+}
+
+.ulNav2__footer li a {
+    text-decoration: none;
+}
+
+.ulNav3__footer {
+    list-style-type: none;
+    font-size: 10px;
+}
+
+.ulNav3__footer li a {
+    display: inline;
+    color: #e8e8e6;
+    text-decoration: none;
+}
+
+.ulNav3__footer li a:hover {
+    color: #444444;
+}

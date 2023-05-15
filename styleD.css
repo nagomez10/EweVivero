@@ -91,12 +91,13 @@ body{
 .grid-container-main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;/*4 col*/
-    grid-template-rows: 20% 20% 45% 45% 45%; /*5 row*/
-    gap: 1.25em;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*7 row*/
+    gap: 1.25rem; /*20px*/
     justify-content: center;
     width: 80%;
     max-width: 75rem; /*1200px*/
-    margin: 0 auto;
+    margin: auto;
+    margin-bottom: 100px;
     background-color: #EAEAEA; 
     padding: 0 5px;
     border: 1px solid black;
@@ -105,15 +106,41 @@ body{
     /* border: 1px solid black; to remove */
     background-color: #B1D7BA;
     text-align: center;
-    line-height: 150px;
+    line-height: 9.375rem; /* 150px */
 }
-
-/*caja c2 ----------------------------------------*/
-/*.c1, .c2{
-    grid-column: 1/5;
-    line-height: 10%;
-    gap: 0px;
-}*/
+.caja4{
+    grid-area: 1 / 1 / 7 / 2;
+    /* grid-column: 1 / 1 ;
+    grid-row: 1 / 6; */
+}
+.caja5{
+    grid-area: 1 / 2 / 3 / 3; /*row col row col*/
+} 
+.caja6{
+    grid-area: 1 / 3 / 3 / 4;
+}
+.caja7{
+    grid-area: 1 / 4 / 3 / 5;
+}
+.caja8{
+    grid-area: 3 / 2 / 5 / 3;
+}
+.caja9{
+    grid-area: 3 / 3 / 5 / 4;
+}
+.caja10{
+    grid-area: 3 / 4 / 5 / 5;
+}
+.caja11{
+    grid-area: 5 / 2 / 7 / 3;
+}
+.caja12{
+    grid-area: 5 / 3 / 7 / 4;
+}
+/* .caja13{
+    grid-area: 5 / 4 / 7 / 5;
+}
+/* .----------- */
 .caja2, .caja3{
     padding: 15px;
     display: flex;

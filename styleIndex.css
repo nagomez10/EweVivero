@@ -1,252 +1,304 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:wght@300;400;700&display=swap');
-
-
-.body__index {
-    background-color: rgb(238, 231, 231);
-    font-family: 'Raleway', sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*ESTRUCTURA GRID inicio*/
+
+body {
+    background-color: rgb(238, 231, 231);
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5px;
+}
 
 .grid-container {
     display: grid;
-    /* padding: 10px;*/
+    grid-template-columns: 1fr;
     gap: 5px;
-    grid-template-rows: repeat (6, auto);
-    grid-template-columns: auto auto auto auto;
-    /* grid-template-columns: repeat (4, 1fr); 
-    4= cantidad de columnas que quiero aplicar
-    1fr=cantidad de unidades fraccionarias
-    va a tener 4 columnas de 1fr cada una de ellas*/
-    grid-template-areas:
-        "header header header header"
-        "slides slides slides slides"
-        "ofertas ofertas ofertas ofertas"
-        "categorias categorias categorias categorias"
-        "cuidados cuidados cuidados cuidados"
-        "newsletter newsletter newsletter newsletter"
-        "footer footer footer footer";
+    justify-content: center;
+    align-content: center;
+    width: 1200px;
 }
 
-.item {
-    border: 1px solid black;
-    /* height: 100px;*/
-    font-family: Gotham, sans-serif;
+.grid-item {
+    background-color: red;
+    border: blue solid 2px;
 }
 
-header {
-    grid-area: header;
-    background-color: rgb(239, 112, 43);
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
+/*INICIO HEADER*/
 
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #DEB595;
+    display: flex;
+    justify-content: space-between;
 }
 
-#logo a {
+
+#logo {
+    text-transform: uppercase;
     display: inline;
     color: #e8e8e6;
     text-decoration: none;
-    filter: drop-shadow(-1px 6px 3px rgba(17, 39, 10, 0.5));
-
+    padding-top: 10px;
+    padding-left: 7px;
+    margin-bottom: 15px;
+    filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.145));
 }
 
-#logo a:hover {
-    color: #444444;
-
-
-}
-
-/*inicio carousel*/
-.contenedor-slider
-{
+.nav_header {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    padding: 0px 40px;
+    align-self: center;
 }
 
-.slider-izquierdo, .slider-derecho
-{
-    width: 5%;
-}
-
-.slider-izquierdo img, .slider-derecho img
-{
-   width: 100%;
-
-}
-
-.slider-screen
-{
-    width: 90%;
-}
-
-.slider-screen img
-{
-    width: 100%;
+.nav_header ul {
+    list-style-type: none;
 }
 
 
-/*fin carousel*/
-
-
-
-section.ofertas {
-    grid-area: ofertas;
-    background-color: rgb(28, 85, 27);
+.nav_header ul li {
+    display: inline;
 }
 
-section.categorias {
-    grid-area: categorias;
-    background-color: rgb(23, 182, 66);
-}
-
-section.cuidados {
-    grid-area: cuidados;
-    background-color: rgb(94, 136, 136);
-}
-
-.suscripcion {
-    grid-area: cuidados;
-    background-color: rgb(47, 69, 197);
-}
-
-footer .sub-footer-subscribe {
-    padding: 10px 0 50px 0;
-    background-image: url(/arquivos/assets_footer_icons_bg-subscribe.jpg);
-    background-repeat: repeat;
-}
-
-footer .wrapper-container {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1185px;
-}
-
-.text-subscribe {
-    font-size: calc((19/16) * 1rem);
-    color: #333;
-    font-weight: 600;
-    margin-top: 45px;
-    margin-bottom: 25px;
-    font-family: Gotham, sans-serif;
-}
-
-footer .sub-footer-subscribe .wrapper-container>div {
-    display: block;
+.nav_header ul li a {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    color: #433534;
+    font-weight: bold;
+    font-size: 14px;
     text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursiva;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-footer .sub-footer-subscribe .wrapper-container>div.subscribe .prompt {
-    margin: 5px 0;
+ul li a:hover {
+    color: #f4fff6;
 }
 
-footer .sub-footer-subscribe .wrapper-container>div.subscribe .prompt .newsletter-prompt {
-    display: block;
-    color: #ff5800;
-    text-align: right;
-    margin-right: 48%;
+
+.box__intro {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.form__suscribite {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
+.form__header {
+    display: flex;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.headerSearch__input {
+    border-radius: 15px;
+    height: 2em;
+    border: none;
+    background-color: #fff;
+    font-weight: bold;
+    color: #433534;
     text-align: center;
+    margin-left: 7px;
 }
 
-input.newsletter-email {
-    color: #828282;
-    font-size: calc((14/16) * 1rem);
-    font-weight: 200;
-    height: 44px;
-    padding: 12px;
+.compra__box {
+    display: flex;
+    align-self: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.link__compra {
+    text-decoration: none;
+    color: black;
+
+}
+
+/*inicio CAROUSEL*/
+
+.carousel {
+    padding: 0;
     margin: 0;
-    width: 390px;
-    vertical-align: middle;
-    /* -webkit-appearance: none;*/
-    border: 1.2px solid #ddd;
 }
 
-input.newsletter-submit {
-    color: #fff;
-    font-weight: 600;
-    border: 1px solid #ff5700;
-    font-size: calc((16/16) * 1rem);
-    background-color: #ff5700;
-    height: 44px;
-    vertical-align: middle;
-    width: 196px;
-    margin-left: -5px;
-    font-family: Gotham, sans-serif;
+.mySlides {
+    display: flex;
+    align-self: center;
+    max-width: 100%;
+    background-color: #e7e7e5;
+}
+
+/*fin CAROUSEL*/
+
+
+.buttonL_slider,
+.buttonR_slider {
+    background-color: #113428;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    justify-content: center;
+}
+
+/*FIN HEADER*/
+
+/*section CUIDADOS*/
+
+.cuidados {
+    display: flex;
+    background-color: #6e804f;
+    padding: 40px;
+}
+
+#h2_cuidar {
+    color: #dbb292;
+    text-shadow: 1px 3px 5px #1d2124;
+    letter-spacing: 2px;    
+    font-family: 'Bebas Neue', cursiva;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cuidados p {
+    padding: 20px 50px;
+    color: #e5e5e3;
+    letter-spacing: 1px;
+    line-height: 22px;    
 }
 
 
-
-
-
+/*inicio FOOTER*/
 
 footer {
-    grid-area: footer;
+    height: 100%;
     background-color: #433534;
+    padding: 25px 10px;
+}
+
+#footer_contenedor {
+    width: 100%;
     height: auto;
-}
-
-/*ESTRUCTURA GRID fin*/
-
-
-/*FOOTER*/
-
-footer p {
-    color: #e8e8e6;
+    text-align: justify;
+    color: #e5e5e3;
+    font-size: 20px;
+    -moz-column-count: 2;
+    -moz-column-gap: 2em;
+    -moz-column-rule: 2px solid #ffffff;
+    -moz-column-width: 95%;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2em;
+    -webkit-column-rule: 2px solid #ffffff;
+    -webkit-column-width: 150px;
+    column-count: 2;
+    column-gap: 2em;
+    column-rule: 2px solid #ffffff;
+    column-width: 150px;
     font-size: 15px;
+    word-wrap: break-word;
+
 }
 
-.ulNav1__footer {
+.lista_menu_footer {
+    margin: 0px;
+    padding-top: 10px;
+    padding-right: 40px;
     list-style-type: none;
 }
 
-.ulNav1__footer li a {
+.lista_menu_footer li a {
     display: inline;
-    color: #e8e8e6;
+    width: 100%;
+    height: 40px;
+    color: #dbb292;
+    line-height: 20px;
     text-decoration: none;
+    font-family: 'Bebas Neue', cursiva;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.ulNav1__footer li a:hover {
-    color: #deb595;
+.lista_menu_footer li a:hover {
+    color: #F5DA81;
 }
 
-.ulNav2__footer {
+#redes_foot {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.iconos_redes_foot {
+    margin: 5px 10px;
+    padding: 0px;
     list-style-type: none;
 }
 
-.ulNav2__footer li a {
+.iconos_redes_foot li {
+    display: inline;
+}
+
+.iconos_redes_foot li a {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
     text-decoration: none;
 }
 
-.ulNav3__footer {
-    list-style-type: none;
+#legales_footer {
+    width: 100%;
+    height: auto;
+    background-color: #636260;
+    clear: both;
+    box-sizing: border-box;
+}
+
+
+ul .menu_legales {
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.menu_legales li {
+    display: block;
+}
+
+.menu_legales li a {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    color: #ff9d00;
+    font-weight: bold;
+    text-align: center;
     font-size: 10px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: center;
 }
 
-.ulNav3__footer li a {
-    display: inline;
-    color: #e8e8e6;
-    text-decoration: none;
-}
-
-.ulNav3__footer li a:hover {
-    color: #444444;
-}
+/*fin FOOTER*/

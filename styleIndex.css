@@ -14,15 +14,10 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5px;
+    /* gap: 5px;*/
     justify-content: center;
     align-content: center;
     width: 1200px;
-}
-
-.grid-item {
-    background-color: red;
-    border: blue solid 2px;
 }
 
 /*INICIO HEADER*/
@@ -116,7 +111,6 @@ ul li a:hover {
 .link__compra {
     text-decoration: none;
     color: black;
-
 }
 
 /*inicio CAROUSEL*/
@@ -135,7 +129,6 @@ ul li a:hover {
 
 /*fin CAROUSEL*/
 
-
 .buttonL_slider,
 .buttonR_slider {
     background-color: #113428;
@@ -148,9 +141,188 @@ ul li a:hover {
     display: inline-block;
     font-size: 14px;
     justify-content: center;
+
 }
 
 /*FIN HEADER*/
+
+/*inicio OFERTAS*/
+
+.section_ofertas {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background-color: #e4e4e2;
+}
+
+.box_ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+    justify-content: center;
+    width: 90%;
+
+    
+   
+}
+
+.section_ofertas h2 {
+    font-size: 25px;
+    color: #433534;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 100%;   
+    font-weight: bold;   
+}
+
+.ofertas {
+    width: 300px;
+    height:auto;
+    background-color:white;
+    border-radius: 15px;
+    font-size: 100%;
+    color: #433534;
+    filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.145));
+    border: solid 2px #bbbbba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.div_img{
+    width: 200px;
+}
+
+.img_ofertas {
+    padding: 0;
+}
+
+.ofertas .p1_ofertas{
+    color: #433534;
+    font-size: 2.5em;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.ofertas .p2_ofertas{
+    color: #433534;
+    font-size: 2em;
+    font-family: Roboto;
+    
+}
+
+.button1 {
+    width: 250px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color:  #433534;
+    height: auto;
+  }
+
+
+
+  .button2 {
+    border: none;
+    color:  #433534;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #e4e4e2;
+    width: 250px;
+    height: auto;
+  }
+
+
+/*fin OFERTAS*/
+
+/*inicio CATEGORIAS*/
+
+.section_categorias {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background-color:white;
+}
+
+.box_categoria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center ;
+}
+
+.section_categorias h2 {
+    font-size: 25px;
+    color: #433534;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 100%;  
+    font-weight: bold; 
+    text-shadow: black;
+}
+
+.categorias {
+    width: 100px;
+    height: auto;
+    background-color: #e5e5e3;
+    border-radius: 15px;
+    font-size: 100%;
+    color: #433534;
+    filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.145));
+    border: solid 2px #bbbbba;
+    ;
+
+}
+
+.img_categorias {
+    padding: 0;
+}
+
+/*
+
+
+body.new-home .menu.active .menu-slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+*/
+
+
+
+/*fin CATEGORIAS*/
+
+
+/*inicios OFERTAS*/
+
+
+
+/*fin OFERTAS*/
 
 /*section CUIDADOS*/
 
@@ -163,27 +335,119 @@ ul li a:hover {
 #h2_cuidar {
     color: #dbb292;
     text-shadow: 1px 3px 5px #1d2124;
-    letter-spacing: 2px;    
+    letter-spacing: 2px;
     font-family: 'Bebas Neue', cursiva;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Orbitron', sans-serif;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 12px;
+    padding-top: 40px;
+    padding-left: 20px;
 }
 
 .cuidados p {
     padding: 20px 50px;
     color: #e5e5e3;
     letter-spacing: 1px;
-    line-height: 22px;    
+    line-height: 22px;
 }
 
+.a_cuidados {
+    color: #e5e5e3;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursiva;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*fin CUIDADOS*/
+
+/*inicio SUSCRIBITE*/
+
+.suscribite_box {
+    background-color: #dbb292;
+    height: 220px;
+}
+
+.sub-footer-subscribe {
+    max-width: 1185px;
+}
+
+.img_sobre {
+    margin-right: 10px;
+}
+
+.text-subscribe {
+    font-size: calc((19/16) * 1rem);
+    color: #433534;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-family: Gotham, sans-serif;
+}
+
+.sub-footer-subscribe>div {
+    display: block;
+    text-align: center;
+}
+
+.sub-footer-subscribe>div.subscribe .prompt {
+    margin: 5px 0;
+}
+
+.sub-footer-subscribe>div.subscribe .prompt .newsletter-prompt {
+    display: block;
+    color: #433534;
+    text-align: right;
+    margin-right: 48%;
+}
+
+.form__suscribite {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+}
+
+input.newsletter-email {
+    color: #828282;
+    font-size: calc((14/16) * 1rem);
+    font-weight: 200;
+    height: 44px;
+    padding: 12px;
+    margin: 0;
+    width: 390px;
+    vertical-align: middle;
+    /* -webkit-appearance: none;*/
+    border: 1.2px solid #ddd;
+}
+
+input.newsletter-submit {
+    color: #e5e5e3;
+    font-weight: 600;
+    border: 1px solid #113428;
+    font-size: calc((16/16) * 1rem);
+    background-color: #113428;
+    height: 44px;
+    vertical-align: middle;
+    width: 196px;
+    margin-left: -5px;
+    font-family: Gotham, sans-serif;
+}
+
+/*fin SUSCRIBITE*/
 
 /*inicio FOOTER*/
 
 footer {
-    height: 100%;
     background-color: #433534;
-    padding: 25px 10px;
 }
 
 #footer_contenedor {
@@ -206,7 +470,24 @@ footer {
     column-width: 150px;
     font-size: 15px;
     word-wrap: break-word;
+}
 
+#servicios_footer {
+    column-count: 3;
+    column-width: 33%;
+    column-gap: 70px;
+    column-rule: 1px solid #433534;
+    /*linea divisoria de columnas*/
+    padding: 100px;
+    background-color: white;
+}
+
+.info_footer {
+    column-count: 3;
+    column-width: 33%;
+    column-gap: 70px;
+    column-rule: 2px solid #ffffff;
+    /*linea divisoria de columnas*/
 }
 
 .lista_menu_footer {

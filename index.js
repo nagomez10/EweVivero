@@ -19,4 +19,4 @@ function showDivs(n) {
 }
 
 //SUSCRIBITE
-document.querySelector("body > footer > div.sub-footer-subscribe")
+document.querySelector("body > section > div.sub-footer-subscribe")

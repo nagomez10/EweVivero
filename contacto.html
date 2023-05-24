@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Ewe Vivero, es un emprendimiento familiar que nació por el amor a las plantas. Ubicado en pleno corazón de la ciudad de Buenos Aires">
+        content="Ewe Vivero, es un emprendimiento familiar que nació por el amor a las plantas. Ubicado en pleno corazón de la ciudad de Buenos Aires.">
     <!--descripcion de la pag/ SEO-->
     <meta name="keywords"
         content="EWE, VIVERO, EWE VIVERO, VIVERO EN BUENOS AIRES, EMPRENDIMIENTO, EMPRENDIMIENTO FAMILIAR, FAMILIAR">
@@ -38,7 +38,7 @@
                     <nav class="nav_header">
                         <ul>
                             <li class="navItem"><a class="navLink" href="index.html">Inicio</a></li>
-                            <li class="navItem"><a class="navLink" href="categorías.html">Categorías</a></li>
+                            <li class="navItem"><a class="navLink" href="catalogo.html">Categorías</a></li>
 
                             <li class="navItem"><a class="navLink" href="contacto.html">Contacto</a></li>
                             <li class="navItem"><a class="navLink" href="#">Acerca de</a></li>
@@ -77,18 +77,52 @@
             <main class="formulario">
                 <section class="ingreso_datos">
                     <h5> contactanos<h5>
-
+                            <h4 class="h4_form">Envíame los detalles en el siguiente formulario.</h4>
                             <form id="contacto_form" method="POST" action="#">
-                                <ul>
-                                    <li> Nombre completo: <input type="text" name="nombre" required></li>
-                                    <li> Edad: <input type="number" name="edad" min="21" max="100">
-                                    </li>
-                                    <li> Tel: <input type="number" name="numero_telefono">
-                                    </li>
-                                    <li> Email: <input type="email" name="correo" required></li>
-                                    <li> Asunto: <textarea name="asunto" rows="5"></textarea></li>
-                                    <input class type="submit">
-                            </form>
+
+                                <div class="form-group">
+                                    <label for="#"></label>
+                                    <input type="text" name="nombre" required class="form-control" id="input_nombre"  placeholder="Nombre Completo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="#"></label>
+                                    <input type="number" name="edad" required min="21" max="100" class="form-control" id="edad"  placeholder="Edad">
+                                </div>
+                                <!--telefono-->
+                                <div class="form-group">
+                                    <label for="#"></label>
+                                    <input type="number" name="numero_telefono" required class="form-control" id="telefono"  placeholder="Teléfono">
+                                </div>
+                                <!--email-->
+                                <div class="form-group">
+                                    <label for="#"></label>
+                                    <input type="email" name="correo" required id="email" class="form-control"                                  placeholder="nombre@example.com">
+                                </div>
+                                <!--asunto-->
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <textarea id="textarea" name="asunto" rows="5" class="form-control"  placeholder="Asunto"></textarea>
+                                </div>
+                                <button type="submit" class="input_contacto">Enviar</button>
+                            </form>                  
+                </section>
+
+
+                <section>
+                    <div class="row mx-0">
+                        <article>
+                            <h2>GET IN TOUCH</h2>
+                            <P> KARINA ROSA <br>
+                                +54 9 11 15.3395.3613<br>
+                                decodikiaro@gmail.com<br>
+                                Buenos Aires, Argentina
+                            </P>
+                            <div>
+                                <video class="text-center mx-3 my-5" width="auto" height="240" src="assets/videos/mov_bbb.mp4" autoplay loop
+                                    controls poster="assets/images/escritorio.jpg">Your browser does not support the
+                                    video tag.
+                                </video>
+                            </div>
                 </section>
             </main>
         </div> <!--FIN MAIN-->

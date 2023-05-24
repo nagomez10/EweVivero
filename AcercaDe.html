@@ -16,6 +16,7 @@
         <script src="https://kit.fontawesome.com/2dd84c4f23.js" crossorigin="anonymous"></script>
         <!--<link para incorporar imagenes de https://fontawesome.com/-->
         <link rel="stylesheet" type="text/css" href="styleD.css"> <!--hoja de estilo externa-->
+        <link rel="stylesheet" type="text/css" href="api.css">
         <link rel="preconnect" href="https://fonts.gstatic.com"> <!--acceso a uso de google fonts-->
         <link
             href="https://fonts.googleapis.com/css2? family = Bebas + Neue & family = Montserrat: wght @ 200 & family = Orbitron & family = Roboto: wght @ 300; 500 & display = swap "
@@ -66,10 +67,54 @@
         </header>
     </div>
 
-    <button onclick="traerDatos()">dale click</button>
+    <div class="contenedor">
+    <div class="div_img">
+        <h2>Quienes somos</h2>
+        <p>
+            En Ewe, somos un equipo apasionado y comprometido con el cuidado de las plantas y el medio ambiente. Nuestra empresa fue fundada con la visión de crear un espacio donde las personas pudieran conectarse con la naturaleza y descubrir el placer de tener plantas en sus vidas.
+            <img class="img_categorias" src="assets/images/nosotros.png" width="250%" height="auto" alt="Exteriores" />
+        </p>
+    </div>
+    <div>
+        <h2>Nuestra Cultura</h2>
+        <p>En Ewe, valoramos profundamente la belleza de la flora y el impacto positivo que las plantas pueden tener en nuestras vidas. Nos esforzamos por cultivar un ambiente cálido y acogedor, donde nuestros visitantes se sientan inspirados y animados a explorar el maravilloso mundo de las plantas.</p>
+    </div>
+    <div>
+        <h2>Nuestra vision</h2>
+        <p>En Ewe, nuestra visión es promover la conciencia ambiental y fomentar un estilo de vida más verde y sostenible. Creemos que al conectar con la naturaleza a través de las plantas, podemos encontrar una mayor armonía con nuestro entorno y contribuir a la preservación del planeta.</p>
+    </div>
+    <div>
+        <h2>Amor por las plantas</h2>
+        <p>En Ewe, el amor por las plantas es la base de todo lo que hacemos. Valoramos la singularidad y la diversidad de cada especie y nos esforzamos por cuidar de ellas con dedicación y respeto. Creemos que las plantas tienen la capacidad de alegrar nuestros hogares, purificar el aire y brindar un ambiente relajante y sereno.</p>
+    </div>
+    <div>
+        <h2>Nuestros servicios</h2>
+        <p>En Ewe, ofrecemos una amplia gama de servicios para satisfacer las necesidades de todos los amantes de las plantas. Contamos con un extenso catálogo de plantas de interior y exterior, incluyendo variedades exóticas y plantas nativas de la región. Además, brindamos asesoramiento experto, talleres educativos y diseño de jardines personalizados para ayudarte a crear espacios verdes únicos y llenos de vida.</p>
+    </div>
+    <div>
+        <h2>Unete a la comunidad de Ewe</h2>
+        <p>Te invitamos a unirte a nuestra comunidad de amantes de las plantas. Explora nuestra página web para descubrir nuestras últimas adquisiciones, consejos de cuidado de las plantas y eventos especiales. ¡Ven a visitarnos en persona y experimenta la magia de Ewe, donde florece el amor por las plantas!</p>
+    </div>
+    </div>
+        <section class="weather-content">
+        <h1>Buscador del clima</h1>
+        <div class="result">
+            <p>Agrege cuidad y pais</p>
 
-    <script src="clima.js"></script>
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Indique su ciudad">
+            <select name="" id="country">
+                <option disabled selected value="">Indique el país</option>
+                <option value="AR">Argentina</option>
+            </select>
+            <input type="submit" name="" id="" value="Vea el clima para sus plantas">
+        </form>
+    </section>
+    <script src="api.js" defer></script>
     <div class="footer">
+
+
         <footer>
             <section id="section_servicios">
                 <article>

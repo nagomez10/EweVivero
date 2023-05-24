@@ -41,7 +41,7 @@
                             <li class="navItem"><a class="navLink" href="catalogo.html">Categorías</a></li>
 
                             <li class="navItem"><a class="navLink" href="contacto.html">Contacto</a></li>
-                            <li class="navItem"><a class="navLink" href="#">Acerca de</a></li>
+                            <li class="navItem"><a class="navLink" href="AcercaDe">Acerca de</a></li>
                         </ul>
                     </nav>
                     <!--window search inicio-->
@@ -78,54 +78,53 @@
                 <section class="ingreso_datos">
                     <h5> contactanos<h5>
                             <h4 class="h4_form">Envíame los detalles en el siguiente formulario.</h4>
-                            <form id="contacto_form" method="POST" action="#">
+                            <!--inicio Formulario-->
+                            <form onsubmit="return validarFormulario()" id="contacto_form">
+                                <label for="nombre"></label>
+                                <input type="text" id="nombre" required class="form-control"
+                                    placeholder="Nombre Completo">
 
-                                <div class="form-group">
-                                    <label for="#"></label>
-                                    <input type="text" name="nombre" required class="form-control" id="input_nombre"  placeholder="Nombre Completo">
-                                </div>
-                                <div class="form-group">
-                                    <label for="#"></label>
-                                    <input type="number" name="edad" required min="21" max="100" class="form-control" id="edad"  placeholder="Edad">
-                                </div>
-                                <!--telefono-->
-                                <div class="form-group">
-                                    <label for="#"></label>
-                                    <input type="number" name="numero_telefono" required class="form-control" id="telefono"  placeholder="Teléfono">
-                                </div>
-                                <!--email-->
-                                <div class="form-group">
-                                    <label for="#"></label>
-                                    <input type="email" name="correo" required id="email" class="form-control"                                  placeholder="nombre@example.com">
-                                </div>
-                                <!--asunto-->
-                                <div class="form-group">
-                                    <label for=""></label>
-                                    <textarea id="textarea" name="asunto" rows="5" class="form-control"  placeholder="Asunto"></textarea>
-                                </div>
+                                <label for="edad"></label>
+                                <input type="number" id="edad" required class="form-control" placeholder="Edad">
+
+                                <label for="telefono"></label>
+                                <input type="tel" id="telefono" required class="form-control" placeholder="Teléfono">
+
+                                <label for="correo"></label>
+                                <input type="email" id="correo" required class="form-control"
+                                    placeholder="nombre@example.com">
+
+                                <label for="asunto"></label>
+                                <input type="text" id="asunto" required rows="5" class="form-control"
+                                    placeholder="Asunto">
+
                                 <button type="submit" class="input_contacto">Enviar</button>
-                            </form>                  
+                            </form>
+                            <!--fin Formulario-->
                 </section>
 
-
-                <section>
-                    <div class="row mx-0">
-                        <article>
-                            <h2>GET IN TOUCH</h2>
-                            <P> KARINA ROSA <br>
-                                +54 9 11 15.3395.3613<br>
-                                decodikiaro@gmail.com<br>
-                                Buenos Aires, Argentina
-                            </P>
-                            <div>
-                                <video class="text-center mx-3 my-5" width="auto" height="240" src="assets/videos/mov_bbb.mp4" autoplay loop
-                                    controls poster="assets/images/escritorio.jpg">Your browser does not support the
-                                    video tag.
-                                </video>
-                            </div>
-                </section>
+                <section class="inTouch_section">
+                    <div class="info_contacto">
+                        <h2>GET IN TOUCH</h2>
+                        <P> EWE VIVERO <br>
+                            <strong id="sucursal">Sucursal Palermo</strong><br>
+                            +54 9 11 15.3395.3613<br>
+                            ewevivero@gmail.com<br>
+                            Buenos Aires, Argentina
+                            <br><br>
+                            <strong id="venta_mayorista">
+                                <h4><b> Para venta Mayoristas</b></h4> enviar mail a: <br> info@ewevivero.com.ar<br>
+                                ventas@ewevivero.com.ar<br>
+                                +54 9 11 15.2596.4319<br>
+                                <i> Producción y venta mayorista: Merlo<br>
+                                    Atención al público:Sucursal Escobar</i><br>
+                            </strong>
+                        </P>
+                </section>                
             </main>
         </div> <!--FIN MAIN-->
+
+        
 
         <!--inicio FOOTER-->
         <div class="item footer">
@@ -149,8 +148,8 @@
                             <ul class="lista_menu_footer">
                                 <li class="navItem"><a class="navLink" href="index.html">Inicio</a></li>
                                 <li class="navItem"><a class="navLink" href="catalogo.html">Categorías</a></li>
-                                <li class="navItem"><a class="navLink" href="productos.html">Contacto</a></li>
-                                <li class="navItem"><a class="navLink" href="contacto.html">Acerca de</a></li>
+                                <li class="navItem"><a class="navLink" href="contacto.html">Contacto</a></li>
+                                <li class="navItem"><a class="navLink" href="AcercaDe.html">Acerca de</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -177,6 +176,7 @@
 
 
     <script src="index.js"> </script>
+    <script src="validacionForm.js"> </script>
 </body>
 
 </html>

@@ -37,6 +37,8 @@ body {
 .grilla {
     display: grid;
     /*tipo de display: grid o inline-grid*/
+    width: 100%;
+    height: auto;
 
 
     /*uso un atajo para definir cantidad de filas /cantidad de columnas*/
@@ -668,20 +670,33 @@ footer {
 
 
 /*----CONTACTOS---------------------------------------------------*/
+
+
+
 .main_contactos {
     background-color: white;
     display: flex;
-   
-   
+    flex-wrap: nowrap;
+    flex-direction: row; 
+    width: 1200px;
+}
+
+.formulario {
+    display: flex;
+   background-color: white;
+   width: 100%;
+  justify-content: center;
+ 
+  
+    /*align-items: center;*/
 }
 
 .ingreso_datos {
     width: 400px;
-    height: 530px;
+    height: auto;
     background-color: #ffffff;
-    margin-top: 50px;
-    margin-bottom: 25px;
-   
+margin-right: 100px;
+padding: 20px;
 }
 
 h5 {
@@ -707,8 +722,6 @@ h5 {
     font-size: 14px;
 }
 
-
-
 #contacto_form {
     text-align: left;
     font-size: 12px;
@@ -730,7 +743,6 @@ h5 {
     background-color: #fcfcfc;
     resize: none;
     padding: 5px;
-
 }
 
 input {
@@ -749,13 +761,45 @@ input {
     color: white;
     padding: 15px 15px;
     text-decoration: none;
-    margin: 25px 150px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 100px;
     cursor: pointer;
     width: 50%;
     font-size: 15px;
     filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.271));
+   
 }
 
 .input_contacto[type=submit]:hover {
     background-color: #DEB595;
 }
+
+
+.inTouch_section {
+    color: #898787;
+   
+    background-image: url('assets/images/hoja.png');
+  background-size: cover;
+  min-width: 400px;
+   
+}
+
+.info_contacto{
+    margin-top: 160px;
+}
+
+#sucursal {
+    color:  #113428; 
+ }
+
+#venta_mayorista {
+    
+    color: #6e804f;
+ }
+
+ #imagen_hoja {
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+

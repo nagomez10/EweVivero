@@ -136,28 +136,22 @@ footer {
     height: 200px;
 }
 
-/*inicio section SERVICIOS*/
-#section_servicios {
-    column-count: 3;
-    column-width: 33%;
-    column-gap: 70px;
-    column-rule: 1px solid #433534;
-    /*linea divisoria de columnas*/
-    padding: 100px;
-    background-color: white;
-    color:#433534;
-}
-/*fin section SERVICIOS*/
+
 
 /*inicio section datos*/
-#section_datos {
+#ingreso_datos {
     background-color: #433534;
   /*  text-align: justify;*/
     color:#e4e4e2;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    margin-left: 100px;
+  
 }
+
+
+
+
 
 .item_datos{
     display: flex;

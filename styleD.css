@@ -4,13 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    background-color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 16px;
-
 }
-
 /*header ----------------------------------------*/
 .grid-container-header{
     display: grid;
@@ -21,52 +18,37 @@ body{
     height: 4.81em; /*77px*/
     max-width: 90em; /*1440px*/
     margin: 0 auto;
-    background-color: #EAEAEA; 
+    background-color: #DEB595; /*#EAEAEA to see div box*/
     padding: 10px;
     /*border: 1px solid black; to remove*/
 }
 .header{
-    /*grid-area: header;*/
     /*border: 1px solid black; for remove*/
     background-color: #DEB595;
-    padding: 0px;/*remove*/
     display: flex;
     justify-content: space-between;
+    margin: 110px;
 }
-
-.header .logo{
-    text-align: left;
-    text-transform: uppercase;
-    padding: 0px; /*to remove*/
+/*logo -------------- */
+.logo img{
     margin-left: 10px;
+    /*border: 1px solid black;  to remove */
+    display: block; /*try inline-block*/
+    width:70px
 }
-
-.logo .logo-vivero{
-    padding: 15px;
-    border: 1px solid black;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-}
-.logo .logo-vivero:hover{
-    background-color: white;
-}
-
 .header .menu{
     text-align: right;
-    padding: 0px; /*to remove*/
-    justify-content: center;
+    padding: 10px;
 }
 .menu a{
-    border: 1px solid black; /*for remove*/
+    /*border: 1px solid black; to remove*/
     color: black;
     padding: 15px;
     display: inline-block;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 .menu a:hover{
-    background-color: white;
+    background-color: #D29F77;
     color: black;
 }
 /*search bar*/
@@ -75,30 +57,21 @@ body{
     float: right;
     margin-left: 20px;
 }
-.menu input[type=text]{/*try remove [type=text]*/
+.menu .search-container input{/*try adding [type=text] to input*/
     float: right;
     background-color: #D29F77;
     border: none;
-    padding: 10px;
+    padding: 17px; /*to check*/
 }
-.menu .search-container .search-icon{
-    padding: 15px;
-    background-color: #DEB595;
-    cursor: pointer;
-}
-.menu .search-container .search-icon:hover{
-    background-color: white;
-}
-.shopping-icon, .user-icon{
+.shopping-icon, .user-icon, .search-icon{
     padding: 15px;
     background-color: #DEB595;
     cursor: pointer;
     border: none;
 }
-.shopping-icon:hover, .user-icon:hover{
+.shopping-icon:hover, .user-icon:hover, .search-icon:hover{
     background-color: #D29F77;
 }
-
 /*header ----------------------------------------*/
 
 /*main ----------------------------------------*/
@@ -107,58 +80,100 @@ body{
     width: 80%;
     max-width: 75rem; /*1200px*/
     margin: 0 auto;
-    background-color: #EAEAEA; /*to remove*/
-    /*padding: 0 5px;*/
-    border: 1px solid black;/*to remove*/
+    /*border: 1px solid black;to remove*/
     font-size: 14px;
 }
+.caja2, .caja3{ /*caja2 barra de navegación, caja3 Categorías y Ordenar por */
+    padding: 15px;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.caja2 a{ /*caja2 barra de navegación */
+    text-decoration: none;
+    margin: 0 5px;
+    color: #2C2C2C;
+}
+hr{/* the line */
+    width: 98%;
+    border: 1px solid rgb(197, 197, 197);
+    margin-left: 20px;
+}
+.caja3{ /* caja3 Categorías y Ordenar por */
+    justify-content: space-between;
+}   
 .grid-container-main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;/*4 col*/
-    grid-template-rows: 20% 20% 45% 45% 45%; /*5 row*/
-    gap: 1.25em;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /*6 row*/
+    gap: 1.25rem; /*20px*/
     justify-content: center;
     width: 80%;
     max-width: 75rem; /*1200px*/
-    margin: 0 auto;
-    background-color: #EAEAEA; 
-    padding: 0 5px;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 15px;
     border: 1px solid black;
 }
-
-.caja{
+.caja{ /* todas las cajas del grid main*/
     /* border: 1px solid black; to remove */
     background-color: #B1D7BA;
-    text-align: center;
-    line-height: 150px;
-    }
-
-/*caja c2 ----------------------------------------*/
-/*.c1,*/ .c2{
-    grid-column: 1/5;
-    line-height: 10%;
-    gap: 0px;
+    /* text-align: center; */
+     /*line-height: 9.375rem; 150px*/
 }
-.c2{
-    /*border: 1px solid black; to remove*/
-    padding: 20px;
-    display: flex;
+.caja .fa-heart{
+    
 }
-.c2 a{
-    text-decoration: none;
-    margin: 0 5px;
-    color: black;
+.caja4{ /* caja4 filtros Categorías */
+    grid-area: 1 / 1 / 7 / 2;
+    border: 1px solid black;
+    background-color: white;
+    color: #2C2C2C;
+    text-decoration-line: underline;
+    display: block;
+    justify-content: space-evenly;
+    
 }
-hr{/* the line */
-    width: 62.5em;
-    border: 1px solid grey;
-    margin-left: 25px;
+.caja4 button{
+    padding: 10px 50px;
+    background-color: #7CBC8C;
+    border: none;
 }
-/*caja c2 ----------------------------------------*/
-
-/* .c3{
-    grid-row: 3/6; 
-} */
+.caja5{ /* caja5 primera Card de producto*/
+    border: 1px solid black;
+    background-color: white;
+    grid-area: 1 / 2 / 3 / 3; /*row col row col*/
+}
+.text{
+    display: inline-block;
+    /* flex-direction: ; */
+}
+.text p{
+    border: 1px solid black;
+}
+.caja6{ /*caja6 tercera Card de producto*/
+    grid-area: 1 / 3 / 3 / 4;
+}
+.caja7{ /*caja7 cuarta Card de producto*/
+    grid-area: 1 / 4 / 3 / 5;
+}
+.caja8{ /*caja8 quinta Card de producto*/
+    grid-area: 3 / 2 / 5 / 3;
+}
+.caja9{ /*caja9 sexta Card de producto*/
+    grid-area: 3 / 3 / 5 / 4;
+}
+.caja10{ /*caja10 septima Card de producto*/
+    grid-area: 3 / 4 / 5 / 5;
+}
+.caja11{ /*caja11 octava Card de producto*/
+    grid-area: 5 / 2 / 7 / 3;
+}
+.caja12{ /*caja12 novena Card de producto*/
+    grid-area: 5 / 3 / 7 / 4;
+}
+/* .caja13{
+    grid-area: 5 / 4 / 7 / 5;
+}
 
 /*footer*/
 /* .c13, .c14 {

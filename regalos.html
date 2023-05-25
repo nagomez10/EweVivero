@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ewe Vivero, es un emprendimiento familiar que nació por el amor a las plantas. Ubicado en pleno corazón de la ciudad de Buenos Aires">
+    <!--descripcion de la pag/ SEO-->
+    <meta name="keywords"
+        content="EWE, VIVERO, EWE VIVERO, VIVERO EN BUENOS AIRES, EMPRENDIMIENTO, EMPRENDIMIENTO FAMILIAR, FAMILIAR">
+    <!--keywords/ SEO-->
+    <title>Ewe Vivero</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css"> hoja de estilo externa-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <script src="https://kit.fontawesome.com/2dd84c4f23.js" crossorigin="anonymous"></script>
+    <!--<link para incorporar imagenes de https://fontawesome.com/-->
+    <link rel="stylesheet" type="text/css" href="styleIndex.css"> <!--hoja de estilo externa-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--acceso a uso de google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2? family = Bebas + Neue & family = Montserrat: wght @ 200 & family = Orbitron & family = Roboto: wght @ 300; 500 & display = swap "
+        rel=" stylesheet "> <!-- link para fuente. Hay otra manera ademas del link en head-->
+</head>
+
+<body>
+
+    <div class="grid-container grilla">
+
+        <!--header inicio-->
+        <div class="item header">
+            <header class="header_box">
+                <!-- Brand -->
+                <div id="logo">
+                    <a href="index.html"><img src="assets/images/eweLogo.png" alt="Ewe Vivero" style="width:100px;"></a>
+                </div>
+
+                <div class="box__intro">
+                    <nav class="nav_header">
+                        <ul>
+                            <li class="navItem"><a class="navLink" href="index.html">Inicio</a></li>
+                            <li class="navItem"><a class="navLink" href="categorias.html">Categorías</a></li>
+
+                            <li class="navItem"><a class="navLink" href="contacto.html">Contacto</a></li>
+                            <li class="navItem"><a class="navLink" href="AcercaDe.html">Acerca de</a></li>
+                        </ul>
+                    </nav>
+                    <!--window search inicio-->
+                    <!--lupa-->
+
+                    <form class="form__header" method="get" action="search">
+                        <span>
+                            <img src="assets/images/lupa.svg" alt="search" width="15">
+                        </span>
+
+                        <!--box buscador-->
+                        <input class="headerSearch__input" type="text" name="q" min-length="2" autocomplete="off"
+                            placeholder="¿Que estás buscando?" required>
+                    </form>
+
+                    <!--window search fin-->
+                    <!--inicio bolsa compras-->
+                    <div class="compra__box">
+                        <a href="#" class="link__compra">
+                            <span>
+                                <img src="assets/images/bolsa.svg" alt="search" width="20" height="20">
+                            </span>
+                            <span>0</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!--header fin-->
+
+        <!--INICIO MAIN-->
+        <div class="item main" id="main_regalos">
+            <!--publicidad_header-->
+            <div>
+                <img src="assets/images/header_regalos.png"
+                    alt="Regalá vida! Regalá naturaleza a quien más quieras.Envíos gratis en productos seleccionados"
+                    width="1200px" class="bannerCorp">
+            </div>
+            <div class="card_box">
+                <!--cards-->
+                <div class="card">
+                    <img src="assets/images/regalo_black.png" alt="Black" width="250" height="auto">
+                    <div>
+                        <button class="btnR" id="btn_regalosB" type="button">ver</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/images/regalo_gold.png" alt="gold" width="250" height="auto">
+                    <div>
+                        <button class="btnR" id="btn_regalosG" type="button">ver</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/images/regalo_platinum.png" alt="platinum" width="250" height="auto">
+                    <div>
+                        <button class="btnR" id="btn_regalosP" type="button">ver</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/images/regalo_start.png" alt="start" width="250" height="auto">
+                    <div>
+                        <button class="btnR" id="btn_regalosS" type="button">ver</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bannerCorp">
+                <img src="assets/images/bannerCorporativo.png" alt="regalos corporativos">
+            </div>
+        </div>
+
+        <!--inicio FOOTER-->
+        <!--inicio section servicios-->
+        <div class="footer">
+            <footer>
+                <section id="section_servicios">
+                    <article>
+                        <img class="img_footer" src="assets/images/wpp.png" width="180" height="auto" alt="whatsapp">
+                        <h3>ASESORAMIENTO Y VENTAS</h3><br>
+                        <p>Atención personalizada para ayudarte a encontrar lo que estas buscando.</p>
+                    </article>
+
+                    <article>
+                        <img class="img_footer" src="assets/images/camion.png" width="180" height="auto" alt="envío">
+                        <h3>ENVÍOS A DOMICILIO</h3><br>
+                        <p>Envíos a todo el país. Envíos gratis dentro de zona CABA. y AMBA</p>
+                    </article>
+
+                    <article>
+                        <img class="img_footer" src="assets/images/seguimiento.png" width="180" height="auto"
+                            alt="seguimiento">
+                        <h3>POST VENTA</h3><br>
+                        <p>Seguimiento para una óptima adaptación de tus plantas en su nuevo hábitat.</p>
+                    </article>
+                </section>
+
+                <!--fin section servicios-->
+
+                <section id="section_datos">
+                    <div class="item_datos">
+                        <aricle>
+                            <h4>Comunicate con nosotros:</h4>
+
+                            <p><strong>SUCURSAL PALERMO</strong>/Buenos Aires, Argentina<br>
+                                <strong>EMAIL:</strong>ewevivero@gmail.com
+                                <br>
+                                <strong>PHONE: </strong>+54.9.11.3395.3613
+                            </p>
+                        </aricle>
+                    </div>
+
+                    <div class="item_datos">
+                        <nav class="menu_principal">
+                            <h4>Conoce más</h4>
+                            <ul class="lista_menu_footer">
+                                <li class="navItem"><a class="navLink" href="index.html">Inicio</a></li>
+                                <li class="navItem"><a class="navLink" href="categoria.html">Categorías</a></li>
+                                <li class="navItem"><a class="navLink" href="contacto.html">Contacto</a></li>
+                                <li class="navItem"><a class="navLink" href="AcercaDe.html">Acerca de</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="item_datos">
+                        <h4>Seguinos en redes</h4>
+                        <nav class="nav1_redes">
+                            <ul class="ul_nav1Redes">
+                                <li><a href="twitter"><i class="fa-brands fa-square-twitter fa-2xl" alt="twitter"
+                                            style="color: #dbb292;"></i></a></li>
+                                <li><a href="instagram"><i class="fa-brands fa-square-instagram fa-2xl" alt="instagram"
+                                            style="color: #dbb292;"></i></a></li>
+
+                                <li><a href="facebook"><i class="fa-brands fa-square-facebook fa-2xl" alt="facebook"
+                                            style="color: #dbb292;"></i></a></li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </section>
+            </footer>
+        </div> <!--FIN FFOTER-->
+    </div><!--FIN CONTAINER GRILLA-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

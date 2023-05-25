@@ -1,0 +1,9 @@
+
+.contenedorAcerca{
+        display: grid; 
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 5%;
+        font-size: 133%;
+        font-style:oblique
+        
+}
